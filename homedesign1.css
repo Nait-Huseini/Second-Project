@@ -1,0 +1,121 @@
+body {
+    background: url(/images/homephoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0; 
+  }
+  
+  .navbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(2, 2, 2, 0.658);
+    height: 60px;
+  }
+  
+  .navbar li, .nav__link{
+    display: flex;
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 15px;
+  }
+  
+  .navbar li, i, .nav__link:hover {
+    cursor: pointer;
+    transition: 0.1s;
+    color: rgb(122, 120, 120);
+    font-size: 20px;
+  }
+  
+  .section__header {
+    margin-top: 50px;
+    text-align: center;
+    text-shadow:rgb(255, 255, 255) 3px 1px 3px;
+    font-family: "Outfit";
+    font-size: 45px;
+  }
+
+  .section__text {
+    background-color: rgba(90, 118, 120, 0.386);
+    margin-top: 20px;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+    font-family: 'Trebuchet MS';
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+   .section__first-image {
+    margin: 20px;
+    display: flex;
+    border-radius: 10px;
+    float: right;
+    width: 600px;
+    height: 350px;
+    filter: blur(2px);
+  }
+  
+  @media screen and (max-width: 580px) {
+    .navbar {
+      height: 70px;
+      width: 100%;
+    }
+    .navbar li .nav__link{
+      display: flex;
+      font-size: 15px;
+      margin: -5px;
+      font-family:'Gill Sans MT';
+    }
+
+    i {
+      visibility: hidden;
+    }
+ 
+    .section__text {
+      width: 100%;
+      color: rgb(245, 245, 245);
+      text-shadow: 3px 3px 3px black;
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .section__header {
+      margin-top: 20px;
+      font-size: 38px;
+    }
+
+    .section__image--size {
+      width: 100%;
+      margin-top: 5px;
+      position: relative;
+      left: 150px;
+    }
+    .section__text {
+      width: 100%;
+      font-size: 27px;
+    }
+  }
+  @media screen and (min-width: 769px) {
+    body {
+      height: 100vh;
+    }
+    
+    .section__header {
+      margin-top: 20px;
+    }
+
+    .section__image--size {
+      margin-top: 10px;
+    }
+
+    .section__text {
+      width: 100%;
+    }
+  }

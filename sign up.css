@@ -1,0 +1,147 @@
+body {
+    background: url(/images/job.app.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.section__container {
+    margin-top: 40px;
+    width: 300px;
+    height: 550px;
+    background:rgba(44, 43, 43, 1);
+    box-shadow: 4px 4px 2px 2px black;
+    border-radius: 20px; 
+    padding: 20px 30px;
+  }
+  
+  .section__second-header {
+    text-align: center;
+    margin: 10px 0 30px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+  }
+  
+  .section__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .input  {
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid black;
+    box-shadow: 3px 4px 5px black;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    font-weight: bold;
+    background-color: rgb(216, 216, 216);
+  }
+  
+  .forget__section {
+    text-align:start;
+    color: #ffffff;
+  }
+  
+  .section__button {
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    background: rgb(154, 150, 150);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .section__button:hover {
+    background-color: rgb(75, 76, 77);
+    transition: 0.2s;
+    color: whitesmoke;
+  }
+  
+  .section__sign-up {
+    font-size: 13px;
+    color: whitesmoke;
+  }
+  
+  .section__sign-up-link, a {
+    margin-left: 1px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .section__sign-up-link, a:hover {
+    color: rgb(113, 111, 111);
+    transition: 0.2s;
+  }
+
+  @media screen and (max-width: 576px) {
+    .section__container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      width: 350px;
+    }
+
+    .section__form {
+      margin-bottom:10px;
+      width: 100%;
+    }
+
+    .section__second-header {
+      font-size: 35px;
+    }
+
+    .section__button {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .section__container {
+      width: 320px;
+      height: 510px;
+      margin-top: 70px;
+    }
+    
+    .section__form {
+      width: 100%;
+    }
+
+    .section__button,  .forget__section {
+      margin: 0px;
+    }
+    
+    .input {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .section__container {
+      margin-top: 70px;
+      width: 330px;
+      height: 510px;
+      background:rgba(44, 43, 43, 1);
+      box-shadow: 4px 4px 2px 2px black;
+      border-radius: 20px; 
+      padding: 20px 30px;
+    }
+
+    .section__form {
+      width: 100%;
+      display: flex;
+    }
+  }
+  
